@@ -2,11 +2,12 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>portfolio_site</title>
+    <title>Caitlyn Landry - Full-Stack Web Developer</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="/favicon.ico">
-    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
@@ -21,18 +22,33 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+    <nav>
+      <ul id="navbar">
+        <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
+        <li data-menuanchor="about"><a href="#about">About</a></li>
+        <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+        <li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth section</a></li>
+      </ul>
+    </nav>
 
     <div id="fullpage">
-      <div class="section">
-        <div id="landing-image">
-          <div id="headline">
+      <div class="section" data-anchor="home">
+        <div class="landing-image">
+          <div class="headline">
             <h1>Caitlyn Landry</h1>
             <h2>Full-Stack Web Developer</h2>
           </div>
         </div>
       </div>
-      <div class="section">Some section</div>
-      <div class="section">Some section</div>
+      <div class="section" data-anchor="about">
+        <img src="../images/CL_headshot.jpg" alt="Caitlyn Landry headshot">
+        <section class="about-me">
+          <h1>A Little About Me...</h1>
+          <p>Discovering my passion for programming was a very happy accident. Before becoming a web developer, I did everything from event planning to email marketing to fundraising to database management for Boston-area nonprofits. I eventually realized that my work managing the organization's email marketing was what I enjoyed most and started teaching myself HTML, CSS, and JavaScript. From there, I decided to enroll in General Assembly's Web Development Immersive, which I consider the best decision of my career.</p>
+          <p>I'm a long-time Boston resident with varied interests: food, running, brewing beer, whitewater rafting, Boston sports, ballet, and art.</p>
+        </section>
+      </div>
+      <div class="section" data-anchor="contact">Some section</div>
       <div class="section">Some section</div>
     </div>
 

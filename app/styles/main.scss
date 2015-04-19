@@ -3,16 +3,20 @@
 
 @import "modules/mixins";
 
+@import "partials/navbar";
+
 body {
   @include defaults;
+  font-family: 'Roboto Slab', serif;
+  color: #444444
 }
 
-#landing-image {
+.landing-image {
   background-image: url('../images/triangles.png');
   background-size: cover;
   height: 100%;
   width: 100%;
-  #headline {
+  .headline {
     margin: -75px 0 0 -336px;
     position: absolute;
     top: 50%;
@@ -21,14 +25,37 @@ body {
       color: white;
       font-size: 80px;
       font-family: 'Source Code Pro', Helvetica, Arial, sans-serif;
+      font-weight: 600;
       margin: 0;
     }
     h2 {
       color: white;
       font-size: 40px;
       font-family: 'Source Code Pro', Helvetica, Arial, sans-serif;
+      font-weight: 600;
       margin: 0;
       text-align: center;
     }
+  }
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
+  height: 250px;
+  width: auto;
+  border-radius: 20px;
+}
+
+.about-me {
+  margin: 150px 40px 30px 40px;
+  h1 {
+    font-size: 35px;
+    font-style: bold;
+  }
+  p {
+    font-size: 18px;
   }
 }
