@@ -17,16 +17,14 @@ body {
   height: 100%;
   width: 100%;
   .headline {
-    margin: -75px 0 0 -336px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    @include vertical-align;
     h1 {
       color: white;
       font-size: 80px;
       font-family: 'Source Code Pro', Helvetica, Arial, sans-serif;
       font-weight: 600;
       margin: 0;
+      text-align: center;
     }
     h2 {
       color: white;
@@ -39,23 +37,79 @@ body {
   }
 }
 
-img {
+img.headshot {
   display: block;
   margin: 0 auto;
   position: relative;
   top: 100px;
-  height: 250px;
+  height: 230px;
   width: auto;
-  border-radius: 20px;
+  border-radius: 60px;
 }
 
 .about-me {
-  margin: 150px 40px 30px 40px;
+  margin: 150px 150px 30px 150px;
+  text-align: center;
   h1 {
     font-size: 35px;
     font-style: bold;
   }
   p {
-    font-size: 18px;
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+  a {
+    @include button;
+    text-decoration: none;
+    color: white;
+    text-align: center;
   }
 }
+
+.contact-me {
+  @include vertical-align;
+  margin: 0 150px;
+  text-align: center;
+  h1 {
+    font-size: 60px;
+  }
+  p {
+    font-size: 30px;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  ul {
+    list-style: none;
+    text-align: center;
+    li {
+      display: inline-block;
+      margin: 25px 15px;
+      img {
+        height: 100px;
+        width: auto;
+      }
+    }
+  }
+}
+
+.under-construction {
+  @include vertical-align;
+    h1 {
+      font-size: 80px;
+      margin: 0;
+      text-align: center;
+    }
+    h2 {
+      font-size: 40px;
+      margin: 0;
+      text-align: center;
+    }
+    img {
+      height: 150px;
+      width: auto;
+      display: block;
+      margin: 20px auto;
+    }
+  }
