@@ -95,22 +95,22 @@ img.headshot {
   }
 }
 
-.under-construction {
+.work-page {
   @include vertical-align;
     h1 {
       font-size: 80px;
-      margin: 0;
       text-align: center;
     }
-    h2 {
-      font-size: 40px;
-      margin: 0;
+    .projects {
+      display: inline-block;
+      width: 49%;
       text-align: center;
-    }
-    img {
-      height: 150px;
-      width: auto;
-      display: block;
-      margin: 20px auto;
+      img {
+      height: 260px;
+      width: 450px;
+      h2 {
+      text-align: center;
+      }
     }
   }
+}
