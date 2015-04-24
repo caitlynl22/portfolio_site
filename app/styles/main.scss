@@ -55,7 +55,7 @@ img.headshot {
     margin: 30px 0;
   }
   p {
-    font-size: 23px;
+    font-size: 21px;
     margin-bottom: 35px;
   }
   a {
@@ -97,20 +97,26 @@ img.headshot {
 
 .work-page {
   @include vertical-align;
-    h1 {
-      font-size: 80px;
-      text-align: center;
+  h1 {
+    font-size: 80px;
+    text-align: center;
+  }
+  .projects {
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+    img {
+    height: 260px;
+    width: 450px;
     }
-    .projects {
-      display: inline-block;
-      width: 49%;
-      text-align: center;
-      img {
-      height: 260px;
-      width: 450px;
-      h2 {
-      text-align: center;
-      }
+    h2 {
+    text-align: center;
     }
+    p {
+      margin: 0 10px;
+    }
+    // .local-flavor {
+    //   margin-bottom: 15px;
+    // }
   }
 }
